@@ -4,7 +4,7 @@ Problem sets, projects and lecture examples for Harvard CS50: Introduction to Co
 
 To complete the following psets and examples, I viewed all of the CS50 lectures, walkthroughs and adapted them for JavaScript trainees.
 
-##Sylabus:
+##Syllabus:
 
 ##Psets:
   - Problem Set 1: C
