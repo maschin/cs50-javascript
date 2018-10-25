@@ -114,11 +114,16 @@ while(height >= 23 || height < 1){
     let col = 2;
     for(height; height > 0; height--){
         let line = '';
-        for(let width = 0; width < height - 1; width++){
-            line += ' ';
-        }
+        // for(let width = 0; width < height - 1; width++){
+        //     line += ' ';
+        // }
         for(let width = 0; width < col; width++){
-            line += '#';
+            if(width < height - 2) {
+                line += ' ';
+            }
+            else{
+                line += '#';
+            }
         }
         col++;
         document.writeln(line);
