@@ -107,25 +107,20 @@
 
 let height;
 do {
-    height = prompt('Enter positive integer number between 0 and 23');
+    height = +prompt('Enter positive integer number between 0 and 23');
 }
 while(height >= 23 || height < 1){
     document.writeln('Thank you for the valid integer!\Here is Mario\'s half-pyramid of height ' + height);
-    let col = 2;
     for(height; height > 0; height--){
         let line = '';
-        // for(let width = 0; width < height - 1; width++){
-        //     line += ' ';
-        // }
-        for(let width = 0; width < col; width++){
-            if(width < height - 2) {
-                line += ' ';
+        for(let width = 0; width < height + 1; width++){
+            if(width < height - 1){
+                line += '?';
             }
             else{
                 line += '#';
             }
         }
-        col++;
         document.writeln(line);
     }
 }
