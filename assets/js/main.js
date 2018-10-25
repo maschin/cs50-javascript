@@ -111,11 +111,12 @@ do {
 }
 while(height >= 23 || height < 1){
     document.writeln('Thank you for the valid integer!\Here is Mario\'s half-pyramid of height ' + height);
+    let col = height + 1;
     for(height; height > 0; height--){
         let line = '';
-        for(let width = 0; width < height + 1; width++){
+        for(let width = 0; width < col; width++){
             if(width < height - 1){
-                line += '?';
+                line += ' ';
             }
             else{
                 line += '#';
