@@ -178,5 +178,10 @@ while(!change || change <= 0)
         }
     }
 
-    console.log(result);
+    document.writeln('You need next set of coins for change:');
+    for(let key in result){
+        if(result.hasOwnProperty(key)){
+            document.writeln(key + ' = ' + result[key]);
+        }
+    }
 }
