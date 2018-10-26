@@ -154,13 +154,13 @@
     //Bug with 1.12 value
 let change;
 do{
-    change = parseFloat(prompt('O hai! How much change is owned?'));
+    change = parseFloat(window.prompt('O hai! How much change is owned?'));
 }
 while(!change || change <= 0)
 {
     const coins = [25, 10, 5, 1];
     let result = {};
-    let cents = change * 100;
+    let cents = parseInt(change * 100);
 
     coins.forEach(coin => {
        result[coin] = 0;
