@@ -595,12 +595,14 @@
 //         return false;
 //     }
 // }
+
+function caesar(text, key) {
+    for(let i = 0; i < text.length; i++){
+        document.write(String.fromCharCode(calculateNewChar(text[i], key)));
+    }
+}
 //let text = 'uggc://jjj.lbhghor.pbz/jngpu?i=bUt5FWLEUN0.';
-// function caesar(text, key) {
-//     for(let i = 0; i < text.length; i++){
-//         document.write(String.fromCharCode(calculateNewChar(text[i], key)));
-//     }
-// }
+
 
 
 //vigenere.js
@@ -628,7 +630,39 @@ function vigenere(text, key){
         let char = text[i];
         if(isAlpha(char)){
             let keyChar = key[count % key.length];
-            document.write(String.fromCharCode(calculateNewChar(char, keyChar.charCodeAt(0) - 97)));
+            if(isUpper(keyChar)){
+                document.write(String.fromCharCode(calculateNewChar(char, keyChar.charCodeAt(0) - 65)));
+            }
+            else if(isLower(keyChar)){
+                document.write(String.fromCharCode(calculateNewChar(char, keyChar.charCodeAt(0) - 97)));
+
+            }
+            count++;
+        }
+        else{
+            document.write(text[i]);
+        }
+    }
+}
+
+//let text = 'Negh zf av huf pcfx bt gzrwep oz'
+let text = 'Negh zf av huf pcfx bt gzrwep oz';
+// MeeZ me at Zhe paXk at eleven am
+let key = 'bacon';
+deVigenere(text, key);
+function deVigenere(text, key){
+    let count = 0;
+    for(let i = 0; i < text.length; i++){
+        let char = text[i];
+        if(isAlpha(char)){
+            let keyChar = key[count % key.length];
+            if(isUpper(keyChar)){
+                document.write(String.fromCharCode(calculateNewCharDe(char, keyChar.charCodeAt(0) - 65)));
+            }
+            else if(isLower(keyChar)){
+                document.write(String.fromCharCode(calculateNewCharDe(char, keyChar.charCodeAt(0) - 97)));//83//109
+
+            }
             count++;
         }
         else{
@@ -649,20 +683,41 @@ function isAlpha(char){
 
 
 function isUpper(char){
+    //if(code >= 65 && code <= 90)
     return char === char.toUpperCase();
 }
 
 function isLower(char){
+    //if(code >= 97 && code <= 122);
     return char === char.toLowerCase();
 }
 
 function calculateNewChar(char, key){
     let code = char.charCodeAt(0);
-    if(code >= 65 && code <= 90) {
-        return ((char.charCodeAt(0) - 65 + key) % 26 + 65);//91
+    if(isAlpha(char))
+    {
+        if(isUpper(char)){
+            return ((code - 65 + key) % 26 + 65);//91
+        }
+        else if(isLower(char)){
+            return ((code - 97 + key ) % 26 + 97);//123
+        }
     }
-    else if(code >= 97 && code <= 122) {
-        return ((char.charCodeAt(0) - 97 + key ) % 26 + 97);//123
+    else{
+        return char.charCodeAt(0);
+    }
+}
+
+function calculateNewCharDe(char, key){
+    let code = char.charCodeAt(0);
+    if(isAlpha(char))
+    {
+        if(isUpper(char)){
+            return ((code - 65 - key) % 26 + 65);//91
+        }
+        else if(isLower(char)){
+            return ((code - 97 - key ) % 26 + 97);//123
+        }
     }
     else{
         return char.charCodeAt(0);
