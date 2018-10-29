@@ -546,3 +546,129 @@
 //     }
 // }
 
+// let x = 1, y = 2;
+// swap(x, y);
+// document.writeln('x is ' + x);
+// document.writeln('y is ' + y);
+//
+// function swap(a, b){
+//     let tmp = a;
+//     x = b;
+//     y = tmp;
+// }
+
+
+// let pi = 2;
+// let k = 13;
+// // caesar
+// let ci = (pi + k) % 26;
+// document.writeln(ci);
+// // vigener
+// let ci = (pi + kj) % 26;
+// function rot(msg, key){
+//
+// }
+//
+// function rot13(msg){
+//     return rot(msg, 13);
+// }
+
+/**
+ * Pset II
+ */
+
+// Caesar
+// let k = +prompt('Please provide the key: ');
+// if(checkTheKey(k)){
+//     alert('You provided an invalid key!')
+// }
+// else{
+//     let text = prompt('Enter a text to crypt: ');
+//     caesar(text, k);
+// }
+//
+// function checkTheKey(key){
+//     if(!key || k < 0){
+//         return true
+//     }
+//     else{
+//         return false;
+//     }
+// }
+//let text = 'uggc://jjj.lbhghor.pbz/jngpu?i=bUt5FWLEUN0.';
+// function caesar(text, key) {
+//     for(let i = 0; i < text.length; i++){
+//         document.write(String.fromCharCode(calculateNewChar(text[i], key)));
+//     }
+// }
+
+
+//vigenere.js
+// let k = prompt('Please provide the alphabetic key: ');
+// if(checkTheKey(k)){
+//     alert('You provided an invalid key!')
+// }
+// else{
+//     let text = prompt('Enter a text to crypt: ');
+//     vigenere(text, k);
+// }
+
+function checkTheKey(key){
+    for(let i = 0; i < key.length; i++){
+        let code = key.charCodeAt(i);
+        if(code < 65 || code > 122 || (code > 90 && code < 97)){
+            return true;
+        }
+    }
+}
+
+function vigenere(text, key){
+    let count = 0;
+    for(let i = 0; i < text.length; i++){
+        let char = text[i];
+        if(isAlpha(char)){
+            let keyChar = key[count % key.length];
+            document.write(String.fromCharCode(calculateNewChar(char, keyChar.charCodeAt(0) - 97)));
+            count++;
+        }
+        else{
+            document.write(text[i]);
+        }
+    }
+}
+
+function isAlpha(char){
+    let code = char.charCodeAt(0);
+    if(code >= 65 && code <= 90 || code >= 97 && code <= 122){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+
+function isUpper(char){
+    return char === char.toUpperCase();
+}
+
+function isLower(char){
+    return char === char.toLowerCase();
+}
+
+function calculateNewChar(char, key){
+    let code = char.charCodeAt(0);
+    if(code >= 65 && code <= 90) {
+        return ((char.charCodeAt(0) - 65 + key) % 26 + 65);//91
+    }
+    else if(code >= 97 && code <= 122) {
+        return ((char.charCodeAt(0) - 97 + key ) % 26 + 97);//123
+    }
+    else{
+        return char.charCodeAt(0);
+    }
+}
+
+
+
+
