@@ -1,8 +1,49 @@
 'use strict'
 
 /**
- * Lecture #
+ * Lecture #1 Wednesday
  */
+
+/** adder.js
+ *
+ * Michael Maschinoff
+ * maschinov@gmail.com
+ *
+ * Adds two numbers.
+ *
+ * Demonstrate use of CS50's library.
+ */
+
+// // ask user for input
+// let x = +prompt('Give me an integer');
+// let y = +prompt('Give me another integer');
+// let sum = x+y;
+//
+// // do the math
+// document.writeln('The sum of '+ x +' and '+ y +' is '+ sum +'!');
+
+
+/**
+ * conditions.js
+ *
+ * Michael Maschinoff
+ * maschinov@gmail.com
+ *
+ * Tells user if his or her input is positive or negative (somewhat inaccurately).
+ *
+ * Demonstrates use og if-else construct.
+ */
+// ask user for an integer
+let n = +prompt('I\'d like an integer please');
+// analyze user's input (somewhat inaccurately)
+if(n > 0) {
+    document.writeln('You picked a positive number!');
+}
+else{
+    document.writeln('You picked a negative number!');
+}
+
+
 
 //document.write('hello world!\n');
 
@@ -152,36 +193,36 @@
 // }
 
     //Bug with 1.12 value
-let change;
-do{
-    change = parseFloat(window.prompt('O hai! How much change is owned?'));
-}
-while(!change || change <= 0)
-{
-    const coins = [25, 10, 5, 1];
-    let result = {};
-    let cents = parseInt(change * 100);
-
-    coins.forEach(coin => {
-       result[coin] = 0;
-    });
-
-    document.writeln('We need to give a change for: $' + change + ' all we have are $' + coins.join(', $') + ' set of coins.');
-
-    while(cents > 0){
-        for (let val in coins){
-            if(cents >= coins[val]){
-               result[coins[val]]++;
-               cents -= coins[val];
-               break;
-            }
-        }
-    }
-
-    document.writeln('You need next set of coins for change:');
-    for(let key in result){
-        if(result.hasOwnProperty(key)){
-            document.writeln(key + ' = ' + result[key]);
-        }
-    }
-}
+// let change;
+// do{
+//     change = parseFloat(window.prompt('O hai! How much change is owned?'));
+// }
+// while(!change || change <= 0)
+// {
+//     const coins = [25, 10, 5, 1];
+//     let result = {};
+//     let cents = parseInt(change * 100);
+//
+//     coins.forEach(coin => {
+//        result[coin] = 0;
+//     });
+//
+//     document.writeln('We need to give a change for: $' + change + ' all we have are $' + coins.join(', $') + ' set of coins.');
+//
+//     while(cents > 0){
+//         for (let val in coins){
+//             if(cents >= coins[val]){
+//                result[coins[val]]++;
+//                cents -= coins[val];
+//                break;
+//             }
+//         }
+//     }
+//
+//     document.writeln('You need next set of coins for change:');
+//     for(let key in result){
+//         if(result.hasOwnProperty(key)){
+//             document.writeln(key + ' = ' + result[key]);
+//         }
+//     }
+// }
