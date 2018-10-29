@@ -24,7 +24,7 @@
 
 
 /**
- * conditions.js
+ * conditions-0.js
  *
  * Michael Maschinoff
  * maschinov@gmail.com
@@ -33,19 +33,122 @@
  *
  * Demonstrates use og if-else construct.
  */
-// ask user for an integer
-let n = +prompt('I\'d like an integer please');
-// analyze user's input (somewhat inaccurately)
-if(n > 0) {
-    document.writeln('You picked a positive number!');
-}
-else{
-    document.writeln('You picked a negative number!');
-}
+// // ask user for an integer
+// let n = +prompt('I\'d like an integer please: ');
+// // analyze user's input (somewhat inaccurately)
+// if(n > 0) {
+//     document.writeln('You picked a positive number!');
+// }
+// else{
+//     document.writeln('You picked a negative number!');
+// }
 
+/**
+ * conditions-1.js
+ *
+ * Michael Maschinoff
+ * maschinov@gmail.com
+ *
+ * Tells user if his or her input is positive or negative.
+ *
+ * Demonstrates use og if-else if-else construct.
+ */
+// // ask user for an integer
+// let n = +prompt('I\'d like an integer please: ');
+//
+// // analyze user's input
+// if (n > 0) {
+//     document.writeln('You picked a positive number!');
+// }
+// else if(n === 0){
+//     document.writeln('You picked zero!');
+// }
+// else{
+//     document.writeln('You picked a negative number!');
+// }
 
+/**
+ * hello-0.js
+ *
+ * Michael Maschinoff
+ * maschinov@gmail.com
+ *
+ * Says hello to the world.
+ *
+ * Demonstrates use of document.write
+ */
+//document.write('hello, world!\n');
 
-//document.write('hello world!\n');
+/**
+ * hello-1.js
+ *
+ * Michael Maschinoff
+ * maschinov@gmail.com
+ *
+ * Says hello to just Mike.
+ *
+ * Demonstrates use of document.writeln
+ */
+// let name = 'Mike';
+// document.writeln('hello, '+ name  +'!');
+
+/**
+ * hello-2.js
+ *
+ * Michael Maschinoff
+ * maschinov@gmail.com
+ *
+ * Says hello to whomever.
+ *
+ * Demonstrates use of document.writeln
+ */
+// let name = prompt('State your name: ');
+// document.writeln('hello, '+ name +'!');
+
+/**
+ * imprecision.js
+ *
+ * Michael Maschinoff
+ * maschinov@gmail.com
+ *
+ * Divides one floating-point value by another.
+ *
+ * Demonstrate imprecision of floating-point values.
+ */
+
+// let imprecision = 1.0 / 10.0;
+// document.writeln(imprecision);
+
+/**
+ * nonswitch.js
+ *
+ * Michael Maschinoff
+ * maschinov@gmail.com
+ *
+ * Assesses the size of user's input.
+ *
+ * Demonstrates use of Boolean ANDing.
+ */
+// // ask user for an integer
+// let n = parseInt(prompt('Give me an integer between 1 and 10: '))
+// // judge user's input
+// if(n >= 1 && n <= 3){
+//     document.writeln('You picked a small number.');
+// }
+// else if(n >= 4 && n <= 6){
+//     document.writeln('You picked a medium number.');
+// }
+// else if(n >= 7 && n <= 10){
+//     document.writeln('You picked a big number.');
+// }
+// else {
+//     document.writeln('You picked an invalid number.');
+// }
+
+/**
+ * Lecture #1 Friday
+ */
+
 
 // while(true)
 // {
@@ -77,9 +180,7 @@ else{
 //     alert(x + ' is equal yo ' + y);
 // }
 
-/**
- * Lecture #
- */
+
 
 // let age = 18;
 // if(age > 18){
