@@ -449,67 +449,18 @@
 /**
  * Pset I
  */
-/**
- * Water calculator
- */
 
-// function calculateWater(min){
-//     let bottles;
-//     bottles = 6 * min * 2;
-//     return bottles;
-// };
-// let minutes = prompt('How long do you take a shower? In minutes.');
-// alert(calculateWater(minutes));
 
 /**
  * Mario
  */
 //
-// let height;
-// do {
-//     height = +prompt('Enter positive integer number between 0 and 23');
-// }
-// while(height >= 23 || height < 1){
-//     document.writeln('Thank you for the valid integer!\Here is Mario\'s half-pyramid of height ' + height);
-//     let col = height + 1;
-//     for(height; height > 0; height--){
-//         let line = '';
-//         for(let width = 0; width < col; width++){
-//             if(width < height - 1){
-//                 line += ' ';
-//             }
-//             else{
-//                 line += '#';
-//             }
-//         }
-//         document.writeln(line);
-//     }
-// }
+
 
 /**
  * Coins change counter
  */
-// let change;
-// do{
-//     change = parseFloat(prompt('O hai! How much change is owned?'));
-// }
-// while(!change || change <= 0)
-// {
-//     let penny, nickel, dime, quarter;
-//     let cents = change * 100;
-//
-//     quarter = parseInt(cents / 25);
-//     cents -= quarter * 25;
-//     dime = parseInt(cents / 10);
-//     cents -= dime * 10;
-//     nickel = parseInt(cents / 5);
-//     penny = cents - (nickel * 5);
-//
-//     document.writeln('You need quarters: '+ quarter);
-//     document.writeln('You need dime: '+ dime);
-//     document.writeln('You need nickel: '+ nickel);
-//     document.writeln('You need penny: '+ penny);
-// }
+
 
     //Bug with 1.12 value
 // let change;
