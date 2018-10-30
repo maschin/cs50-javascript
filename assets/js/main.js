@@ -606,14 +606,14 @@ function caesar(text, key) {
 
 
 //vigenere.js
-// let k = prompt('Please provide the alphabetic key: ');
-// if(checkTheKey(k)){
-//     alert('You provided an invalid key!')
-// }
-// else{
-//     let text = prompt('Enter a text to crypt: ');
-//     vigenere(text, k);
-// }
+let k = prompt('Please provide the alphabetic key: ');
+if(checkTheKey(k)){
+    alert('You provided an invalid key!')
+}
+else{
+    let text = prompt('Enter a text to crypt: ');
+    vigenere(text, k);
+}
 
 function checkTheKey(key){
     for(let i = 0; i < key.length; i++){
@@ -645,11 +645,15 @@ function vigenere(text, key){
     }
 }
 
-//let text = 'Negh zf av huf pcfx bt gzrwep oz'
+
 let text = 'Negh zf av huf pcfx bt gzrwep oz';
-// MeeZ me at Zhe paXk at eleven am
+// Meet me at the park at eleven am
 let key = 'bacon';
-deVigenere(text, key);
+
+let text2 = 'Negh zf av huf pcfx bt gzrwep oz';
+//
+let key2 = 'Bacon';
+deVigenere(text, key2);
 function deVigenere(text, key){
     let count = 0;
     for(let i = 0; i < text.length; i++){
@@ -713,10 +717,10 @@ function calculateNewCharDe(char, key){
     if(isAlpha(char))
     {
         if(isUpper(char)){
-            return ((code - 65 - key) % 26 + 65);//91
+            return ((code - 90 - key) % 26 + 90);//91
         }
         else if(isLower(char)){
-            return ((code - 97 - key ) % 26 + 97);//123
+            return ((code - 122 - key) % 26 + 122);//123
         }
     }
     else{
