@@ -8,10 +8,13 @@
  *
  * Demonstrates abstraction and hierarchical decomposition.
  */
-for(let i = 0; i < 3; i++){
-    cough();
+
+export function main(){
+    for(let i = 0; i < 3; i++){
+        cough();
+    }
 }
 
 function cough(){
-    document.writeln('cough');
+    alert('cough');
 }

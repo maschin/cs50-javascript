@@ -21,6 +21,24 @@ import {main as loops2} from "./lectures/src1w/loops-2.js";
 import {main as variables0} from "./lectures/src1w/variables-0.js";
 import {main as variables1} from "./lectures/src1w/variables-1.js";
 
+import {main as cough0} from "./lectures/src1f/cough-0.js";
+import {main as cough1} from "./lectures/src1f/cough-1.js";
+import {main as cough2} from "./lectures/src1f/cough-2.js";
+import {main as cough3} from "./lectures/src1f/cough-3.js";
+import {main as cough4} from "./lectures/src1f/cough-4.js";
+
+import {main as function0} from "./lectures/src1f/function-0.js";
+import {main as function1} from "./lectures/src1f/function-1.js";
+import {main as function2} from "./lectures/src1f/function-2.js";
+import {main as function3} from "./lectures/src1f/function-3.js";
+import {main as function4} from "./lectures/src1f/return.js";
+
+import {main as f2c} from "./lectures/src1f/f2c.js";
+
+import {main as switch0} from "./lectures/src1f/switch-0.js";
+import {main as switch1} from "./lectures/src1f/switch-1.js";
+
+
 //Week 1 - Wednesday
 document.getElementById('hello0').addEventListener('click', hello0);
 document.getElementById('hello1').addEventListener('click', hello1);
@@ -45,5 +63,20 @@ document.getElementById('variables0').addEventListener('click', variables0);
 document.getElementById('variables1').addEventListener('click', variables1);
 
 
+//Week 1 - Friday
+document.getElementById('cough0').addEventListener('click', cough0);
+document.getElementById('cough1').addEventListener('click', cough1);
+document.getElementById('cough2').addEventListener('click', cough2);
+document.getElementById('cough3').addEventListener('click', cough3);
+document.getElementById('cough4').addEventListener('click', cough4);
 
+document.getElementById('f2c').addEventListener('click', f2c);
 
+document.getElementById('switch0').addEventListener('click', switch0);
+document.getElementById('switch1').addEventListener('click', switch1);
+
+document.getElementById('function0').addEventListener('click', function0);
+document.getElementById('function1').addEventListener('click', function1);
+document.getElementById('function2').addEventListener('click', function2);
+document.getElementById('function3').addEventListener('click', function3);
+document.getElementById('function4').addEventListener('click', function4);

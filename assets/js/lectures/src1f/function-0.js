@@ -8,9 +8,14 @@
  *
  * Demonstrates a function (not from a library) with a side effect.
  */
-let s = prompt('Your name: ');
-printName(s);
-// say hello to someone by name
+
+export function main(){
+    // say hello to someone by name
+    let s = prompt('Your name: ');
+    printName(s);
+}
+
+
 function printName(name){
-    document.writeln('hello, '+ name +'!');
+    alert('hello, '+ name +'!');
 }

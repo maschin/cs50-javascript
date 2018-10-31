@@ -9,8 +9,10 @@
  * Demonstrates further abstraction.
  */
 
-cough(3);
-sneeze(3);
+export function main(){
+    cough(3);
+    sneeze(3);
+}
 
 /**
  * Cough n times
@@ -24,7 +26,7 @@ function cough(n){
  *
  */
 function sneeze(n){
-    say('achoo')
+    say('achoo', n)
 }
 
 /**
@@ -32,7 +34,7 @@ function sneeze(n){
  */
 function say(word, n){
     for(let i = 0; i < n; i++){
-        document.writeln(word);
+        alert(word);
     }
 }
 
