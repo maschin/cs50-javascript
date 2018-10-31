@@ -9,10 +9,12 @@
  * Demonstrates parameterization.
  *
  */
-cough(3);
+export function main() {
+    cough(3);
+}
 
 function cough(n){
     for(let i = 0; i < n; i++) {
-        document.writeln('cough');
+        alert('cough');
     }
 }

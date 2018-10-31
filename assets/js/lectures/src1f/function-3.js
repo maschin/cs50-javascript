@@ -8,8 +8,11 @@
  *
  * Demonstrates use of a function (not from library) with a return value.
  */
-let n = getPositiveInt();
-document.writeln('Thanks for the '+ n + '!');
+
+export function main(){
+    let n = getPositiveInt();
+    alert('Thanks for the '+ n + '!');
+}
 
 function getPositiveInt(){
     let n;

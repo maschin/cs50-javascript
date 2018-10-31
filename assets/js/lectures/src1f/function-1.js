@@ -8,8 +8,12 @@
  *
  * Demonstrates use of a function (not from library) with a side effect..
  */
+
+export function main(){
+    sayHello();
+}
+
 function sayHello() {
     alert('hello, everyone!');
 }
 
-sayHello();

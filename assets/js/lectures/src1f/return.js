@@ -8,12 +8,14 @@
  *
  * Demonstrates use of parameter and return value.
  */
-let x = 2;
-document.writeln('x is now '+ x);
-document.writeln('Cubing...');
-x = cube(x);
-document.writeln('Cubed!');
-document.writeln('x is now '+ x);
+export function main(){
+    let x = +prompt('Enter an integer: ');
+    alert('x is now '+ x);
+    alert('Cubing...');
+    x = cube(x);
+    alert('Cubed!');
+    alert('x is now '+ x);
+}
 
 // Cube argument
 function cube(n){

@@ -8,7 +8,10 @@
  *
  * Demonstrates use of a function (not from library) with a side effect..
  */
-alert(bit_less(7));
+
+export function main(){
+    alert(bit_less(7));
+}
 
 function bit_less(a){
     let b;
