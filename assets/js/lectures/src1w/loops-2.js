@@ -4,10 +4,12 @@
  * Michael Maschinoff
  * maschinov@gmail.com
  *
- * Prints I'm here to help you 7 times.
+ * Prints "I'm here to help you" 7 times.
  *
  * Demonstrates the for loop
  */
-for(let dwarves = 0; dwarves < 7; dwarves++){
-    document.write('I\'m here to help you!\n');
+export function main(){
+    for(let dwarves = 0; dwarves < 7; dwarves++){
+        alert('I\'m here to help you!\n');
+    }
 }

@@ -8,9 +8,11 @@
  *
  * Demonstrates the variables
  */
-let counter = 0;
-while(true)
-{
-    alert(counter);
-    counter++;
+export function main() {
+    let counter = 0;
+    while(true)
+    {
+        alert(counter);
+        counter++;
+    }
 }

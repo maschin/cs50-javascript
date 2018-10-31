@@ -8,13 +8,18 @@
  *
  * Demonstrates the variables.
  */
-let x = 1, y = 2;
-swap(x, y);
-document.writeln('x is ' + x);
-document.writeln('y is ' + y);
 
-function swap(a, b){
-    let tmp = a;
-    x = b;
-    y = tmp;
+export function main(){
+    let x, y;
+    x = +prompt('Enter a x: ');
+    y = +prompt('Enter a y:' );
+    swap(x, y);
+    alert('x is now ' + x + ' y is now ' + y);
+
+    function swap(a, b){
+        let tmp = a;
+        x = b;
+        y = tmp;
+    }
 }
+

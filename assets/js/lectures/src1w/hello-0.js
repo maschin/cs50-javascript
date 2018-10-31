@@ -8,7 +8,6 @@
  *
  * Demonstrates use of document.write
  */
-
 export function main() {
     document.write('hello, world!\n');
 }

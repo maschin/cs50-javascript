@@ -4,14 +4,17 @@
  * Michael Maschinoff
  * maschinov@gmail.com
  *
- * Compare the age
+ * Access by the age
  *
  * Demonstrates the if-else condition
  */
-let age = 18;
-if(age > 18){
-    document.write('Access granted');
-}
-else{
-    document.write('Access denied');
+export function main() {
+    let age;
+    age = +prompt('Please enter your age: ');
+    if(age > 18){
+        alert('Access granted');
+    }
+    else{
+        alert('Access denied');
+    }
 }

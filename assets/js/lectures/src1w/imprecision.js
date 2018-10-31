@@ -8,6 +8,7 @@
  *
  * Demonstrate imprecision of floating-point values.
  */
-
-let imprecision = 1.0 / 10.0;
-document.writeln(imprecision);
+export function main() {
+    let imprecision = 1.0 / 10.0;
+    document.writeln(imprecision);
+}

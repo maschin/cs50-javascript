@@ -8,5 +8,7 @@
  *
  * Demonstrates use of document.writeln
  */
-let name = prompt('State your name: ');
-document.writeln('hello, '+ name +'!');
+export function main() {
+    let name = prompt('State your name: ');
+    alert('hello, '+ name +'!');
+}

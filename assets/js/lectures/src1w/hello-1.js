@@ -9,4 +9,6 @@
  * Demonstrates use of alert
  */
 
-alert('hello, world!\n');
+export function main() {
+    alert('hello, world!\n');
+}

@@ -8,7 +8,9 @@
  *
  * Demonstrates the while loop
  */
-while(true)
-{
-    document.write('hello, world\n');
+export function main() {
+    while(true)
+    {
+        alert('hello, world\n');
+    }
 }

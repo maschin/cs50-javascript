@@ -8,5 +8,7 @@
  *
  * Demonstrates use of document.writeln
  */
-let name = 'Mike';
-document.writeln('hello, '+ name  +'!');
+export function main(){
+    let name = 'Mike';
+    alert('hello, '+ name  +'!');
+}
