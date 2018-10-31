@@ -8,7 +8,10 @@
  *
  * Demonstrates better design via a loop.
  */
-//cough three times
-for(let i = 0; i < 3; i++){
-    document.writeln('cough');
+
+export function main(){
+    //cough three times
+    for(let i = 0; i < 3; i++){
+        alert('cough');
+    }
 }

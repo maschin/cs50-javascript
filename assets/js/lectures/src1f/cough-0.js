@@ -8,6 +8,9 @@
  *
  * Demonstrates suboptimal design (and coughing).
  */
-document.writeln('cough');
-document.writeln('cough');
-document.writeln('cough');
+
+export function main(){
+    alert('cough');
+    alert('cough');
+    alert('cough');
+}

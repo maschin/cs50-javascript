@@ -9,15 +9,18 @@
  * Demonstrate use of a switch.
  */
 
-let n = 50;
-switch(n){
-    case 50:
-        document.write("CS50 is Introduction to Computer Science");
-        break;
-    case 51:
-        document.write("CS50 is Introduction to Computer Science II");
-        break
-    default:
-        document.write("Sorry, I'm not familiar with that class!")
-        break;
+export function main(){
+    let n = +prompt('Enter an integer name of course: ');
+    switch(n){
+        case 50:
+            alert("CS50 is Introduction to Computer Science");
+            break;
+        case 51:
+            alert("CS50 is Introduction to Computer Science II");
+            break
+        default:
+            alert("Sorry, I'm not familiar with that class!")
+            break;
+    }
 }
+
