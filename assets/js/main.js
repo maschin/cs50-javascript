@@ -49,6 +49,8 @@ import {main as string1} from "./lectures/src2m/string-1.js";
 
 import {main as ages} from "./lectures/src2w/ages.js";
 
+import {main as asciimath} from "./lectures/src2w/asciimath.js";
+
 //Week 1 - Wednesday
 document.getElementById('hello0').addEventListener('click', hello0);
 document.getElementById('hello1').addEventListener('click', hello1);
@@ -103,3 +105,4 @@ document.getElementById('string1').addEventListener('click', string1);
 
 //Week 2 - Wednesday
 document.getElementById('ages').addEventListener('click', ages);
+document.getElementById('asciimath').addEventListener('click', asciimath);
