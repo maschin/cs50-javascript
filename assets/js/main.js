@@ -38,6 +38,16 @@ import {main as f2c} from "./lectures/src1f/f2c.js";
 import {main as switch0} from "./lectures/src1f/switch-0.js";
 import {main as switch1} from "./lectures/src1f/switch-1.js";
 
+import {main as ascii0} from "./lectures/src2m/ascii-0.js";
+import {main as ascii1} from "./lectures/src2m/ascii-1.js";
+
+import {main as buggy0} from "./lectures/src2m/buggy-0.js";
+import {main as buggy1} from "./lectures/src2m/buggy-1.js";
+
+import {main as string0} from "./lectures/src2m/string-0.js";
+import {main as string1} from "./lectures/src2m/string-1.js";
+
+import {main as ages} from "./lectures/src2w/ages.js";
 
 //Week 1 - Wednesday
 document.getElementById('hello0').addEventListener('click', hello0);
@@ -80,3 +90,16 @@ document.getElementById('function1').addEventListener('click', function1);
 document.getElementById('function2').addEventListener('click', function2);
 document.getElementById('function3').addEventListener('click', function3);
 document.getElementById('function4').addEventListener('click', function4);
+
+//Week 2 - Monday
+document.getElementById('ascii0').addEventListener('click', ascii0);
+document.getElementById('ascii1').addEventListener('click', ascii1);
+
+document.getElementById('buggy0').addEventListener('click', buggy0);
+document.getElementById('buggy1').addEventListener('click', buggy1);
+
+document.getElementById('string0').addEventListener('click', string0);
+document.getElementById('string1').addEventListener('click', string1);
+
+//Week 2 - Wednesday
+document.getElementById('ages').addEventListener('click', ages);
