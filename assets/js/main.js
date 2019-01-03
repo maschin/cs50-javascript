@@ -106,3 +106,124 @@ document.getElementById('string1').addEventListener('click', string1);
 //Week 2 - Wednesday
 document.getElementById('ages').addEventListener('click', ages);
 document.getElementById('asciimath').addEventListener('click', asciimath);
+
+// //Problem set
+// function retrieveData(){
+//     setTimeout(() => {
+//         let data = ['one', 'two', 'three'];
+//         return data;
+//     }, 2000);
+// }
+//
+// function one(){
+//     let data = retrieveData();
+//     console.log('I\'m a first one');
+//     //data.push('four');
+//     console.log(data);
+// }
+//
+// function second(){
+//     console.log('I\'m a second one');
+// }
+//
+// one();
+// second();
+
+//Solution one Callback
+// function retrieveData(callback){
+//     setTimeout(() => {
+//         let data = ['one', 'two', 'three'];
+//         callback(data);
+//     }, 2000);
+//
+//     //console.log(callback);
+// }
+//
+// function one(data){
+//     console.log('I\'m a first one');
+//     //data.push('four');
+//     console.log(data);
+// }
+//
+// function second(){
+//     console.log('I\'m a second one');
+// }
+//
+// retrieveData(one);
+// second();
+
+
+//Solution two promise
+// let retrieveData = new Promise((resolve, reject) => {
+//    setTimeout(() => {
+//        let data = ['one', 'two', 'three'];
+//        if(false){
+//            resolve(data);
+//        }
+//        else{
+//            reject(['a', 'b', 'c']);
+//        }
+//    }, 2000);
+// });
+//
+// function one(data){
+//     console.log('I\'m a first one');
+//     console.log(data);
+// }
+//
+// function two(data){
+//     console.log('I\'m a second one');
+//     console.log(data);
+// }
+//
+// retrieveData.then((result) => {
+//     one(result);
+// }, (result) => {
+//     two(result);
+// });
+
+
+//Solution three async/await
+function retrieveData(){
+    let data = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let data = ['one', 'two', 'three'];
+            resolve(data);
+        }, 1000)
+    });
+
+    return data;
+}
+
+async function one(){
+    let data = await retrieveData();
+    console.log(data);
+}
+
+one();
+
+
+
+
+
+
+
+
+// function heatPan(val, callback){
+//     let temp = 190;
+//     do {
+//             temp += val;
+//             console.log(temp);
+//     }
+//     while (temp < 200){
+//         console.log('tt');
+//          callback();
+//     }
+// }
+//
+// function ready(){
+//     console.log('Pan is ready!');
+// }
+//
+// heatPan(4, ready);
+
